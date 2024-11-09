@@ -1,9 +1,11 @@
 # Ignore everything
-*
+/*
+/*/
 
 # Except these...
 !.gitignore
 !.zprofile
 !.zshrc
 !Brewfile
-!.config/
+!/.config/
+!.config/*
