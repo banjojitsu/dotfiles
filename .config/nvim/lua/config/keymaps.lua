@@ -34,3 +34,11 @@ end, { desc = "Jump" })
 map("n", "<leader>st", function()
 	flash.treesitter()
 end, { desc = "Treesitter" })
+
+-- Obsidian
+map("n", "<leader>zb", "<cmd>ObsidianBacklinks<cr>", { desc = "Backlinks" })
+map("n", "<leader>zd", "<cmd>ObsidianDailies<cr>", { desc = "Open dailies" })
+map("n", "<leader>zl", "<cmd>ObsidianLinks<cr>", { desc = "Links" })
+map("n", "<leader>zn", "<cmd>ObsidianNew<cr>", { desc = "New note" })
+map("n", "<leader>zq", "<cmd>ObsidianQuickSwitch<cr>", { desc = "Quick Switch" })
+map("n", "<leader>zs", "<cmd>ObsidianSearch<cr>", { desc = "Search notes" })
