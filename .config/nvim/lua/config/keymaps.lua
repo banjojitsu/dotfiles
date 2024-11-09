@@ -34,8 +34,3 @@ end, { desc = "Jump" })
 map("n", "<leader>st", function()
 	flash.treesitter()
 end, { desc = "Treesitter" })
-
--- Obsidian
-map("n", "<leader>zd", "<cmd>ObsidianDailies<cr>", { desc = "Open dailies" })
-map("n", "<leader>zn", "<cmd>ObsidianNew<cr>", { desc = "New note" })
-map("n", "<leader>zs", "<cmd>ObsidianQuickSwitch<cr>", { desc = "Quick Switch" })
