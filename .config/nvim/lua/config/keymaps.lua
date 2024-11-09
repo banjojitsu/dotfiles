@@ -8,6 +8,7 @@ map("n", "<leader>r", ":%s/<c-r><c-w>", { desc = "Search & replace word" })
 map("n", "<leader>w", "<cmd>w<cr>", { desc = "Write file" })
 map("x", "<leader>r", 'y:%s/<c-r>"', { desc = "Replace selection" })
 map("x", "<leader>s", ":sort<cr>", { desc = "Sort selection" })
+map("n", "<leader>c", "<cmd>bd!<cr>", { desc = "Close current buffer" })
 
 -- Conform
 local conform = require("conform")
@@ -33,3 +34,8 @@ end, { desc = "Jump" })
 map("n", "<leader>st", function()
 	flash.treesitter()
 end, { desc = "Treesitter" })
+
+-- Obsidian
+map("n", "<leader>zd", "<cmd>ObsidianDailies<cr>", { desc = "Open dailies" })
+map("n", "<leader>zn", "<cmd>ObsidianNew<cr>", { desc = "New note" })
+map("n", "<leader>zs", "<cmd>ObsidianQuickSwitch<cr>", { desc = "Quick Switch" })
