@@ -13,10 +13,10 @@ return {
 	},
 	keys = {
 		{
-			"`",
+			"<leader>`",
 			"<cmd>lua MiniFiles.open(vim.api.nvim_buf_get_name(0), false)<cr>",
 			mode = "",
-			desc = "View directory",
+			desc = "Open file directory",
 		},
 	},
 }
