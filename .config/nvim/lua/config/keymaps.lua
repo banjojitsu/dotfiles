@@ -1,8 +1,12 @@
 local map = vim.keymap.set
 
 -- General settings
-map("n", "<Esc>", "<cmd>nohlsearch<CR>")
+map("n", "<esc>", "<cmd>nohlsearch<cr>")
 map("n", "<leader><leader>", ":", { desc = "::" })
+map("n", "<leader>q", "<cmd>q!<cr>", { desc = "Quit neovim" })
+map("n", "<leader>w", "<cmd>w<cr>", { desc = "Write file" })
+map("n", "<leader>r", ":%s/<c-r><c-w>", { desc = "Search & replace word" })
+map("x", "<leader>r", 'y:%s/<c-r>"', { desc = "Replace" })
 
 -- Conform
 local conform = require("conform")
