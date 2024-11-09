@@ -3,7 +3,7 @@ return {
 	build = ":TSUpdate",
 	main = "nvim-treesitter.configs",
 	opts = {
-		ensure_installed = { "lua" },
+		ensure_installed = { "lua", "vim", "regex", "bash", "markdown", "markdown_inline" },
 		auto_install = true,
 		highlight = { enable = true },
 		indent = { enable = true },
