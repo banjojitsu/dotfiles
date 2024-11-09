@@ -25,7 +25,7 @@ return {
 			},
 		},
 		daily_notes = {
-			folder = "notes/dailies",
+			folder = "dailies",
 		},
 	},
 	mappings = {
