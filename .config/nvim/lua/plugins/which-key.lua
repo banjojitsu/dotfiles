@@ -6,6 +6,7 @@ return {
 		spec = {
 			{ "<leader>t", group = "Telescope" },
 			{ "<leader>s", group = "Flash" },
+			{ "<leader>l", group = "LSP" },
 		},
 		icons = { mappings = false },
 	},
