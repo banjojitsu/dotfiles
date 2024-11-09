@@ -7,7 +7,7 @@ return {
 			{ "<leader>t", group = "Telescope" },
 			{ "<leader>s", group = "Flash" },
 			{ "<leader>l", group = "LSP" },
-			{ "<leader>z", group = "Zettelkasten" },
+			{ "<leader>z", group = "ZK" },
 		},
 		icons = { mappings = false },
 	},
