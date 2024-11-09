@@ -1,5 +1,0 @@
-[notebook]
-dir = "~/zk"
-
-[note]
-filename = "{{id}}-{{slug title}}"
