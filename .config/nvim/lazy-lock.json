@@ -18,7 +18,9 @@
   "nvim-lspconfig": { "branch": "master", "commit": "4cb925e96288a71409a86c84fd97f4434a95453e" },
   "nvim-notify": { "branch": "master", "commit": "fbef5d32be8466dd76544a257d3f3dce20082a07" },
   "nvim-treesitter": { "branch": "master", "commit": "8e40904e49bbad5812798eb54be8c00d77cdd301" },
+  "nvim-web-devicons": { "branch": "master", "commit": "19d257cf889f79f4022163c3fbb5e08639077bd8" },
   "plenary.nvim": { "branch": "master", "commit": "2d9b06177a975543726ce5c73fca176cedbffe9d" },
+  "render-markdown.nvim": { "branch": "main", "commit": "d80acb3f4ccc88052f65fa0a26e46c106b328bbe" },
   "telekasten.nvim": { "branch": "main", "commit": "6a10a7929421d6e696e46bbc5aa5627a8cbcf61d" },
   "telescope.nvim": { "branch": "0.1.x", "commit": "a0bbec21143c7bc5f8bb02e0005fa0b982edc026" },
   "which-key.nvim": { "branch": "main", "commit": "68e37e12913a66b60073906f5d3f14dee0de19f2" }
