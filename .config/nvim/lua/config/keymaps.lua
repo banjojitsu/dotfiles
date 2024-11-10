@@ -35,12 +35,12 @@ end, { desc = "Jump" })
 map("n", "<leader>z", "<cmd>Telekasten panel<CR>", { desc = "Telekasten" })
 
 -- Most used functions
-map("n", "<leader>zf", "<cmd>Telekasten find_notes<CR>", { desc = "Find notes" })
-map("n", "<leader>zg", "<cmd>Telekasten search_notes<CR>", { desc = "Search notes" })
-map("n", "<leader>zd", "<cmd>Telekasten goto_today<CR>", { desc = "Goto today" })
+-- map("n", "<leader>zf", "<cmd>Telekasten find_notes<CR>", { desc = "Find notes" })
+-- map("n", "<leader>zg", "<cmd>Telekasten search_notes<CR>", { desc = "Search notes" })
+-- map("n", "<leader>zd", "<cmd>Telekasten goto_today<CR>", { desc = "Goto today" })
 map("n", "<leader>zz", "<cmd>Telekasten follow_link<CR>", { desc = "Follow link" })
-map("n", "<leader>zn", "<cmd>Telekasten new_note<CR>", { desc = "New note" })
-map("n", "<leader>zb", "<cmd>Telekasten show_backlinks<CR>", { desc = "Show backlinks" })
+-- map("n", "<leader>zn", "<cmd>Telekasten new_note<CR>", { desc = "New note" })
+-- map("n", "<leader>zb", "<cmd>Telekasten show_backlinks<CR>", { desc = "Show backlinks" })
 
 -- Call insert link automatically when we start typing a link
 map("i", "[[", "<cmd>Telekasten insert_link<CR>")
