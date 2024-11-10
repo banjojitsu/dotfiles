@@ -3,7 +3,7 @@ return {
 	dependencies = { "nvim-telescope/telescope.nvim" },
 	opts = {
 		-- Main paths
-		dailies = "dailies",
+		dailies = vim.fn.expand("~/zk/dailies"),
 		home = vim.fn.expand("~/zk"),
 
 		-- Note creation settings
@@ -14,7 +14,7 @@ return {
 		uuid_sep = "|",
 
 		-- Note templates
-		template_new_note = "templates/new.md",
-		template_new_daily = "templates/daily.md",
+		template_new_note = vim.fn.expand("~/zk/templates/new.md"),
+		template_new_daily = vim.fn.expand("~/zk/templates/daily.md"),
 	},
 }
