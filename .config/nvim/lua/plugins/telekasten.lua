@@ -11,6 +11,7 @@ return {
 		filename_space_subst = "-",
 		new_note_filename = "uuid-title",
 		uuid_type = "rand",
+		uuid_sep = "|",
 
 		-- Note templates
 		template_new_note = "templates/new.md",

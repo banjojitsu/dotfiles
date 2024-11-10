@@ -4,7 +4,7 @@ g.loaded_netrw = 1
 g.loaded_netrwPlugin = 1
 
 local opt = vim.opt
-opt.conceallevel = 2 -- Enabled for obsidian to work correctly
+opt.conceallevel = 2 -- Enabled for telecasten to use aliases
 opt.cursorline = true -- Show which line cursor is on
 opt.expandtab = true -- Use spaces instead of tabs
 opt.ignorecase = true -- Ignore case when searching
