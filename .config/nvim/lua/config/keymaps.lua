@@ -18,19 +18,29 @@ end, { desc = "Format buffer" })
 
 -- Telescope
 local builtin = require("telescope.builtin")
-map("n", "<leader>td", builtin.diagnostics, { desc = "Search diagnostics" })
-map("n", "<leader>tf", builtin.find_files, { desc = "Find files" })
-map("n", "<leader>tg", builtin.live_grep, { desc = "Live grep" })
-map("n", "<leader>ts", builtin.current_buffer_fuzzy_find, { desc = "Search current file" })
-
--- Telescope LSP
-map("n", "<leader>ls", builtin.lsp_document_symbols, { desc = "Document symbols" })
+map("n", "<leader>t", "<cmd>Telescope<cr>", { desc = "Telescope" })
+-- map("n", "<leader>td", builtin.diagnostics, { desc = "Search diagnostics" })
+-- map("n", "<leader>tf", builtin.find_files, { desc = "Find files" })
+-- map("n", "<leader>tg", builtin.live_grep, { desc = "Live grep" })
+-- map("n", "<leader>ts", builtin.current_buffer_fuzzy_find, { desc = "Search current file" })
 
 -- Flash
 local flash = require("flash")
-map("n", "<leader>ss", function()
+map("n", "<leader>s", function()
 	flash.jump()
 end, { desc = "Jump" })
-map("n", "<leader>st", function()
-	flash.treesitter()
-end, { desc = "Treesitter" })
+
+-- Telekasten
+-- Launch panel if nothing is typed after <leader>z
+map("n", "<leader>z", "<cmd>Telekasten panel<CR>", { desc = "Telekasten" })
+
+-- Most used functions
+-- map("n", "<leader>zf", "<cmd>Telekasten find_notes<CR>", { desc = "Find notes" })
+-- map("n", "<leader>zg", "<cmd>Telekasten search_notes<CR>", { desc = "Search notes" })
+-- map("n", "<leader>zd", "<cmd>Telekasten goto_today<CR>", { desc = "Goto today" })
+-- map("n", "<leader>zz", "<cmd>Telekasten follow_link<CR>", { desc = "Follow link" })
+-- map("n", "<leader>zn", "<cmd>Telekasten new_note<CR>", { desc = "New note" })
+-- map("n", "<leader>zb", "<cmd>Telekasten show_backlinks<CR>", { desc = "Show backlinks" })
+
+-- Call insert link automatically when we start typing a link
+map("i", "[[", "<cmd>Telekasten insert_link<CR>")
