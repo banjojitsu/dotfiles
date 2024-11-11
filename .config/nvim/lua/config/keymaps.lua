@@ -28,7 +28,7 @@ map("n", "<leader>t", "<cmd>Telescope<cr>", { desc = "Telescope" })
 local flash = require("flash")
 map("n", "<leader>s", function()
 	flash.jump()
-end, { desc = "Jump" })
+end, { desc = "Flash" })
 
 -- Telekasten
 -- Launch panel if nothing is typed after <leader>z
@@ -38,9 +38,9 @@ map("n", "<leader>z", "<cmd>Telekasten panel<CR>", { desc = "Telekasten" })
 -- map("n", "<leader>zf", "<cmd>Telekasten find_notes<CR>", { desc = "Find notes" })
 -- map("n", "<leader>zg", "<cmd>Telekasten search_notes<CR>", { desc = "Search notes" })
 -- map("n", "<leader>zd", "<cmd>Telekasten goto_today<CR>", { desc = "Goto today" })
-map("n", "<leader>zz", "<cmd>Telekasten follow_link<CR>", { desc = "Follow link" })
+-- map("n", "<leader>zz", "<cmd>Telekasten follow_link<CR>", { desc = "Follow link" })
 -- map("n", "<leader>zn", "<cmd>Telekasten new_note<CR>", { desc = "New note" })
 -- map("n", "<leader>zb", "<cmd>Telekasten show_backlinks<CR>", { desc = "Show backlinks" })
 
 -- Call insert link automatically when we start typing a link
-map("i", "[[", "<cmd>Telekasten insert_link<CR>")
+-- map("i", "[[", "<cmd>Telekasten insert_link<CR>")
