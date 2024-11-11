@@ -6,6 +6,6 @@ return {
 		"nvim-lua/plenary.nvim",
 	},
 	opts = {
-		defaults = require("telescope.themes").get_ivy({}),
+		defaults = require("telescope.themes").get_ivy({ layout_config = { height = 0.5, preview_cutoff = 10 } }),
 	},
 }
