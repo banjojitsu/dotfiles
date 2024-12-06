@@ -10,7 +10,7 @@ return {
 				require("conform").format({ async = true })
 			end,
 			mode = "",
-			desc = "Format buffer",
+			desc = "format buffer",
 		},
 	},
 	-- This will provide type hinting with LuaLS
