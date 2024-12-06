@@ -1,5 +1,7 @@
+tap "homebrew/bundle"
+tap "jesseduffield/lazygit"
 brew "neovim"
 brew "starship"
-
+brew "jesseduffield/lazygit/lazygit"
 cask "adguard"
 cask "wezterm"
