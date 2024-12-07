@@ -16,5 +16,7 @@ brew update
 # Install all dependencies with bundle
 brew bundle --file ./Brewfile
 
-# Remove dock items
-dockutil --remove all
+# Adjust dock settings
+defaults write com.apple.dock "static-only" -bool "true" && killall Dock
+defaults write com.apple.dock "tilesize" -int "36" && killall Dock
+defaults write com.apple.dock "show-recents" -bool "false" && killall Dock
