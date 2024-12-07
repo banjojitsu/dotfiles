@@ -16,7 +16,5 @@ brew update
 # Install all dependencies with bundle
 brew bundle --file ./Brewfile
 
-# Remove dock items then remove
+# Remove dock items
 dockutil --remove all
-brew uninstall dockutil
-brew cleanup
