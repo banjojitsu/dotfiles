@@ -10,14 +10,13 @@ ln -s $HOME/.dotfiles/.gitconfig $HOME/.gitconfig
 rm -rf $HOME/.zshrc
 ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
 
-rm -rf $HOME/.wezterm.lua
-ln -s $HOME/.dotfiles/.wezterm.lua $HOME/.wezterm.lua
-
-mkdir $HOME/.config
-ln -s $HOME/.dotfiles/nvim $HOME/.config/nvim
-
 # Update Homebrew recipes
 brew update
 
 # Install all dependencies with bundle
 brew bundle --file ./Brewfile
+
+# Remove dock items then remove
+dockutil --remove all
+brew uninstall dockutil
+brew cleanup
